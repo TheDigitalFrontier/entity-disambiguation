@@ -2,7 +2,19 @@
 name = "entity-disambiguation"
 version = "0.1.0"
 description = ""
-authors = ["Johannes Kolberg <johannes.kolberg@cognite.com>"]
+authors = ["Johannes Kolberg <johannes.k.kolberg@gmail.com>"]
+
+[tool.black]
+line-length = 120
+target_version = ['py37']
+include = '\.py$'
+
+[tool.isort]
+line_length=120                # corresponds to -w  flag
+multi_line_output=3            # corresponds to -m  flag
+include_trailing_comma=true    # corresponds to -tc flag
+skip_glob = '^((?!py$).)*$'    # this makes sort all Python files
+known_third_party = []
 
 [tool.poetry.dependencies]
 python = "^3.7"
