@@ -40,4 +40,4 @@ Push your branch to Github. Follow the instructions in your terminal to set the 
 
     $ git push -u origin <your-branch-name>
 
-Go to Github and [create a new Pull Request](https://github.com/TheDigitalFrontier/entity-disambiguation/pulls) to have your branch merged into master, assuming it passes the CI/CD build tests!
+Go to Github and [create a new Pull Request](https://github.com/TheDigitalFrontier/entity-disambiguation/pulls) to have your branch merged into master, assuming it passes the CI/CD build tests.
