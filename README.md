@@ -8,6 +8,7 @@ We use [Poetry](https://python-poetry.org/), a Python packaging, dependency, and
 Clone the repo
 
     $ git clone git@github.com:TheDigitalFrontier/entity-disambiguation.git
+    $ cd entity-disambiguation
 
 Install dependencies and create virtual environment
 
