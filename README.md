@@ -18,6 +18,10 @@ Install pre-commit hooks for code style. Every time you perform a `git commit`, 
     $ poetry run pre-commit install
 
 ### 3. Contributing code
+(Optional) to use the virtual environment with these dependencies
+
+    $ poetry shell
+
 Make sure you have the latest code in `master`
 
     $ git checkout master
