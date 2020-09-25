@@ -1,6 +1,6 @@
 # ac297r-entity-disambiguation
 
-## Developing the package
+## Development
 ### 1. Install Poetry
 We use [Poetry](https://python-poetry.org/), a Python packaging, dependency, and virtual environment manager to streamline development and use of our code. Follow the [instructions](https://python-poetry.org/docs/#installation) to install and set up Poetry.
 
