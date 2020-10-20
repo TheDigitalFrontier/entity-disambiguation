@@ -36,8 +36,8 @@ jobs:
           
       - name: Check codestyle
         run: |
-          poetry run black --check .
-          poetry run isort --check-only -rc .
+          poetry run black .
+          poetry run isort .
           
       - name: Run tests
         run: |
