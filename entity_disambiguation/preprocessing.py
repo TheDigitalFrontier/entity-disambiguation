@@ -8,11 +8,11 @@ import pandas as pd
 def process_input(mydir, train=0.8):
     """
     Function that processes the training input into required formatting (ACY dataset)
-    
+
     Args:
     mydir, the directory that ADY dataset lives in on user's local machine
     train, percentage of training samples specified by user, default 80%
-    
+
     Returns:
     train_x, input for training (tokens and word counts in between this mention and the last mention)
     train_y, output for training (wikipedia page ID's)
