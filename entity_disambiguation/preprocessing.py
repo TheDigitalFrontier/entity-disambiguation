@@ -47,6 +47,7 @@ def process_input(mydir, train=0.8):
         # else we append to words counts between mentions
         else:
             until_next += 1
+
     new_ids = np.array(new_ids)
     train_len = int(train * len(new_tokens))
 
