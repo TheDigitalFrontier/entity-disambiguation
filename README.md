@@ -4,7 +4,7 @@
 ### 1. Install Poetry (once)
 We use [Poetry](https://python-poetry.org/), a Python packaging, dependency, and virtual environment manager to streamline development and use of our code. Follow the [instructions](https://python-poetry.org/docs/#installation) to install and set up Poetry. Do not install Poetry using Homebrew.
 
-### 2. Setting up your local development environment (once)
+### 2. Setting up your local environment (once)
 Clone the repo and set it as your current working directory
 
     $ git clone git@github.com:TheDigitalFrontier/entity-disambiguation.git
@@ -22,15 +22,23 @@ Install pre-commit hooks for code style. Every time you perform a `git commit`, 
 
     $ poetry run pre-commit install
 
-### 3. Contributing code (every time)
-(Optional) to use the virtual environment with these dependencies
+### 3. Running code (every time)
+To use the virtual environment with the specified dependencies, for instance to run a `.py` script directly in terminal
 
     $ poetry shell
 
-To use the virtual environment as your kernel in Jupyter Notebook
+To use the virtual environment as your kernel in Jupyter Notebook, launch `jupyter-notebook` as you normally do, then open or create a notebook, click `Kernel`, `Change kernel`, and select `ac297r` (or the kernel name you chose previously).
 
-# TODO
+### 4. Managing dependencies (every time)
+**Use Poetry** to manage dependencies and your virtual environment. This way other contributors can run and build on your work without having to debug or struggle with dependencies. Consistency is key.
 
+Add or remove dependencies using Poetry. See the full documentation [here](https://python-poetry.org/docs/cli/#add). For instance, to install numpy in the virtual environment:
+
+    $ poetry add numpy
+
+If a package is used only for development but is not necessary to run the code, add it using the `--dev` flag so that users of the published package only install the packages they need. For instance, `pytest` is already installed as a dev dependency as only code contributors need it.
+
+### 4. Contributing code (every time)
 Make sure you have the latest code in `master`
 
     $ git checkout master
