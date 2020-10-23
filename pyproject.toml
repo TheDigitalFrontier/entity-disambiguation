@@ -28,6 +28,9 @@ tensorflow = "2.3.1"
 keras = "^2.4.3"
 nltk = "^3.5"
 ipykernel = "^5.3.4"
+gensim = "^3.8.3"
+wikipedia2vec = "^1.0.4"
+pyemd = "^0.5.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

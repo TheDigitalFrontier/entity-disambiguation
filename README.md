@@ -23,7 +23,7 @@ Install pre-commit hooks for code style. Every time you perform a `git commit`, 
     $ poetry run pre-commit install
 
 ### 3. Running code (every time)
-To use the virtual environment with the specified dependencies, for instance to run a `.py` script directly in terminal
+(Optional) To use the virtual environment with the specified dependencies, for instance to run a `.py` script directly in terminal
 
     $ poetry shell
 
