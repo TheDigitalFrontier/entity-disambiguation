@@ -1,3 +1,9 @@
+# Ignore contents of resource directories
+data/*
+!data/.gitkeep
+embeddings/*
+!embeddings/.gitkeep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
