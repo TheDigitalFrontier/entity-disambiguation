@@ -10,7 +10,7 @@ def normalize_text(text):
     return str(text).strip().lower()
 
 
-def process_input(mydir, train=0.8):
+def process_input(mydir, train=1.0):
     """
     Function that processes the training input into required formatting (ACY dataset)
 
