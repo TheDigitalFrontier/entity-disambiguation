@@ -5,6 +5,11 @@ import numpy as np
 import pandas as pd
 
 
+def normalize_text(text):
+    """Return text after stripping external whitespace and lower casing."""
+    return str(text).strip().lower()
+
+
 def process_input(mydir, train=0.8):
     """
     Function that processes the training input into required formatting (ACY dataset)
