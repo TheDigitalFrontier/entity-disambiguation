@@ -14,20 +14,18 @@ Install dependencies and create virtual environment
 
     $ poetry install
 
-Set up the new virtual environment as a Jupyter Notebook kernel. You can set the kernel name `--name ac297r` to what you want, but for consistency the suggested name is recommended.
-
-    $ poetry run python -m ipykernel install --user --name ac297r
-
 Install pre-commit hooks for code style. Every time you perform a `git commit`, the pre-commit hooks will run to sort dependencies and ask you to fix changes they can't apply automatically
 
     $ poetry run pre-commit install
 
 ### 3. Running code (every time)
+Before running this package, we recommend deactivating all other Python environmennts (including the Conda `base` environment) to avoid other Python versions and packages taking presedence over the ones we defined using Poetry
+
+    $ conda deactivate
+
 (Optional) To use the virtual environment with the specified dependencies, for instance to run a `.py` script directly in terminal
 
     $ poetry shell
-
-To use the virtual environment as your kernel in Jupyter Notebook, launch `jupyter-notebook` as you normally do, then open or create a notebook, click `Kernel`, `Change kernel`, and select `ac297r` (or the kernel name you chose previously).
 
 ### 4. Managing dependencies (every time)
 **Use Poetry** to manage dependencies and your virtual environment. This way other contributors can run and build on your work without having to debug or struggle with dependencies. Consistency is key.

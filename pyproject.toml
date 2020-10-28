@@ -32,6 +32,7 @@ gensim = "^3.8.3"
 wikipedia2vec = "^1.0.4"
 pyemd = "^0.5.1"
 dask = {extras = ["complete"], version = "^2.30.0"}
+jupyter = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
