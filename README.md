@@ -23,9 +23,17 @@ Before running this package, we recommend deactivating all other Python environm
 
     $ conda deactivate
 
+To run Jupyter Notebooks, you can use the command
+
+    $ poetry run jupyter notebook
+
 (Optional) To use the virtual environment with the specified dependencies, for instance to run a `.py` script directly in terminal
 
     $ poetry shell
+
+(Optional) From within the Poetry shell, to check Python interpreters available to Poetry
+
+    $ poetry env info
 
 ### 4. Managing dependencies (every time)
 **Use Poetry** to manage dependencies and your virtual environment. This way other contributors can run and build on your work without having to debug or struggle with dependencies. Consistency is key.
