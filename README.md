@@ -71,3 +71,6 @@ Go to Github and [create a new Pull Request](https://github.com/TheDigitalFronti
 
 #### Miscellaneous notes
 - When adding a new pre-commit hook to the project for the first time, run `poetry run pre-commit run --all-files` manually to run through and apply checks to *all* files, not just .py files. This does not apply when *you* are setting up the environment, only if you are introducing a new pre-commit hook to the whole project for everyone.
+
+### FAQ
+- If when doing a Git commit you get the error message `env: python3.7: No such file or directory`, it is likely because after doing `conda deactivate` out of the `base` global environment, your terminal now has no Python interpreter with which to run the pre-commit hooks. Either reactivate `conda activate base`, enter into `poetry shell`, or do the commit via `poetry run git commit`.
