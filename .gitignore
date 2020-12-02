@@ -3,6 +3,7 @@ data/*
 !data/.gitkeep
 embeddings/*
 !embeddings/.gitkeep
+predictions/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
